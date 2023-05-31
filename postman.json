@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "33fc5f85-1f44-4805-8f68-6369241e52b9",
+		"name": "Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/studio/user/enrolled/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY5MDQzNjI3LCJpYXQiOjE2Njg5NTcyMjcsImp0aSI6ImI0Y2YzZmJkMzdlMDQ0MWQ5Y2Q0ODNlNGU0MmVlOTExIiwidXNlcl9pZCI6NCwidXNlcm5hbWUiOiJlYXRlciJ9.F92tP2K7iLI52rG6zPV_uzbKSfJw6JRv67KH754BQ4w",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "course_id",
+							"value": "7",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studio/user/enrolled/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studio",
+						"user",
+						"enrolled",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/account/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Hooker2",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "Sirenmima%2001",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/account/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"account",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/account/register/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY5MDQzNjI3LCJpYXQiOjE2Njg5NTcyMjcsImp0aSI6ImI0Y2YzZmJkMzdlMDQ0MWQ5Y2Q0ODNlNGU0MmVlOTExIiwidXNlcl9pZCI6NCwidXNlcm5hbWUiOiJlYXRlciJ9.F92tP2K7iLI52rG6zPV_uzbKSfJw6JRv67KH754BQ4w",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Hooker2",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "Sirenmima%2001",
+							"type": "default"
+						},
+						{
+							"key": "password2",
+							"value": "Sirenmima%2001",
+							"type": "default"
+						},
+						{
+							"key": "first_name",
+							"value": "Booker",
+							"type": "default"
+						},
+						{
+							"key": "last_name",
+							"value": "Yuan",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "123@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "subscription_id",
+							"value": "1",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/account/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"account",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/studio/user/drop/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY5MDA2MDQxLCJpYXQiOjE2Njg5MTk2NDEsImp0aSI6ImFiMzljMmNmMmI0MjRjODQ5YmI0ZmYwYTljN2I5NzhjIiwidXNlcl9pZCI6NCwidXNlcm5hbWUiOiJIb29rZXIifQ.bMa_mfWY6AzqzdtPOBC0RugPkDQmw-AKaywBWVuqGG4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "course_id",
+							"value": "7",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studio/user/drop/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studio",
+						"user",
+						"drop",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/studio/1/courses/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY5MDQzNjI3LCJpYXQiOjE2Njg5NTcyMjcsImp0aSI6ImI0Y2YzZmJkMzdlMDQ0MWQ5Y2Q0ODNlNGU0MmVlOTExIiwidXNlcl9pZCI6NCwidXNlcm5hbWUiOiJlYXRlciJ9.F92tP2K7iLI52rG6zPV_uzbKSfJw6JRv67KH754BQ4w",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Bob",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Jook",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "1111",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "eater",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "caonimabi",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "password2",
+							"value": "caonimabi",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/Users/dicespinner/Downloads/Hemorrhage_2.png",
+							"disabled": true
+						},
+						{
+							"key": "telephone",
+							"value": "2100",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "card_number",
+							"value": "0000111122224444",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "cvv",
+							"value": "211",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "is_credit",
+							"value": "yes",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "course_id",
+							"value": "1",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studio/1/courses/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studio",
+						"1",
+						"courses",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
